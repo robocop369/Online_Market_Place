@@ -45,7 +45,7 @@ function App() {
                       name="RecipeSearch"
                       value={recipeSearch}
                       onChange={handleInputChange}
-                      placeholder="Search For a Recipe"
+                      placeholder="Start Your Best Buy Search Here!"
                     />
                   </Col>
                   <Col size="xs-3 sm-2">
