@@ -7,6 +7,10 @@ const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT || 3001;
 
+console.log(PORT)
+
+// const apiRoutes = require("./routes/index");
+
 // Define middleware here
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -18,6 +22,11 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
+
+// // Use apiRoutes
+// app.use("/api", apiRoutes);
+
+
 // Error handling
 app.use(function(err, req, res, next) {
   if (err.name === "UnauthorizedError") {
@@ -27,6 +36,13 @@ app.use(function(err, req, res, next) {
     next(err);
   }
 });
+
+// Send every request to the React app
+// Define any API routes before this runs
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/index.html"));
+// });
+
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
