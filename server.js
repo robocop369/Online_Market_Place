@@ -45,7 +45,7 @@ app.use(function(err, req, res, next) {
 
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactcms");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://user:password1@ds047146.mlab.com:47146/heroku_c83jk5wq");
 
 // Start the API server
 app.listen(PORT, function() {
