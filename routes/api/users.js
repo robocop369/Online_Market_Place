@@ -11,7 +11,7 @@ router.route("/login").post((req, res) => {
     .catch(err => res.status(400).json(err));
 });
 
-// SIGNUP ROUTE
+// SIGNUP ROUTE for users
 router.route("/signup").post((req, res) => {
   usersController.signUp(req, res);
 });
