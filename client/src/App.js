@@ -65,7 +65,7 @@ function App() {
         <Row>
           <Col size="xs-12">
             {!recipes.length ? (
-              <h1 className="text-center">No Products to Display</h1>
+              <h1 className="text-center">No Products to Display Search Again</h1>
             ) : (
               <RecipeList>
                 {recipes.map(recipe => {
