@@ -25,7 +25,7 @@ export function RecipeListItem({
           </Col>
           <Col size="xs-8 sm-9">
             <h3>{name}</h3>
-            <p>Short Description: {shortDescription}</p>
+            <p>Short Description Of Item: {shortDescription}</p>
             <a rel="noreferrer noopener" target="_blank" href={url}>
               Add to Cart!
             </a>
