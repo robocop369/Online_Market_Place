@@ -2,7 +2,7 @@ div.thumbnail {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  padding-top: 100%;
+  width: 90%;
+  padding-top: 90%;
   color: blue;
 }
