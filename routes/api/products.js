@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const productsController = require("../../controllers/productsController");
 
-// Matches with "/api/products"
+// Matches with "/api/products" for the routes
 router
   .route("/")
   .get(productsController.findAll)
